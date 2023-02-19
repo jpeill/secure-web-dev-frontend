@@ -20,7 +20,7 @@ export default {
     ...mapActions(['setLocations']),
     async get_locations() {
       try {
-        const response = await axios.get('BACK_URL/locations', {
+        const response = await axios.get(`${process.env.BACK_URL}/locations`, {
             headers:{
                 Authorization: `Bearer ${this.token}`,
             }           
