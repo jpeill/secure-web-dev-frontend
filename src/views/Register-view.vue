@@ -18,7 +18,7 @@ export default {
   methods: {
     async register() {
       try {
-        await axios.post(`${process.env.BACK_URL}/users/register`, {
+        await axios.post('https://back-jp.onrender.com/users/register', {
           username: this.username,
           password: this.password,
         });

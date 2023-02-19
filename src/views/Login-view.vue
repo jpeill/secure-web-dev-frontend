@@ -29,7 +29,7 @@ export default {
     ...mapActions(['setToken']),
     async login() {
       try {
-        const response = await axios.post(`${process.env.BACK_URL}/users/login`, {
+        const response = await axios.post('https://back-jp.onrender.com/users/login', {
           username: this.username,
           password: this.password,
         });
