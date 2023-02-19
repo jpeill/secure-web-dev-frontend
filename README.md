@@ -1,5 +1,8 @@
 # secure-web-dev-frontend
 
+## Create an `.env` file containing url to your backend:
+   > BACK_URL=https://back-jp.onrender.com
+
 ## Project setup
 ```
 npm install

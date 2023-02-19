@@ -29,7 +29,7 @@ export default {
     ...mapActions(['setToken']),
     async login() {
       try {
-        const response = await axios.post('http://localhost:3000/users/login', {
+        const response = await axios.post('BACK_URL/users/login', {
           username: this.username,
           password: this.password,
         });
